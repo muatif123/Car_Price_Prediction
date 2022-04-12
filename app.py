@@ -14,7 +14,7 @@ def Home():
     return render_template('index.html')
 
 standard_to = StandardScaler()
-@app.route('/predict', methods = ['POST', 'GET'])
+@app.route('/predict', methods = ['POST'])
 def predict():
     fuel_type_diesel = 0
     if request.method == 'POST':
